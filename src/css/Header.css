@@ -1,0 +1,7 @@
+.custom-navbar {
+    display: flex;
+    gap: 50px;
+    /*justify-content: space-around;*/
+    align-items: center;
+    margin: auto;
+}
