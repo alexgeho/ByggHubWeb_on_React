@@ -4,6 +4,7 @@
     background-color: #0785F4;
     color: #FFFFFF;
     border-radius: 15px;
+    z-index: 1;
 }
 
 .BlueButton:hover {

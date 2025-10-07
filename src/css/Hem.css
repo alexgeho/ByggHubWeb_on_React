@@ -1,0 +1,15 @@
+.CustomCard {
+    background: transparent;
+    color: #ffffff; /* чтобы текст был читаем */
+    border: none; /* убирает стандартную границу */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* мягкая тень, если нужно */
+}
+
+.HemPage {
+    background-color: #000509; /* твой цвет */
+    width: 100vw;
+}
+
+.CustomCard img {
+    max-width: 250px;
+}

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Button} from "react-bootstrap";
+import '../css/BlueButton.css';
 
 export default class BlueButton extends Component {
     render() {

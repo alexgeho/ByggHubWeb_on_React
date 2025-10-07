@@ -3,6 +3,7 @@
     height: 624px;
     position: relative;
     z-index: 1;
+    /*margin-left: -50px;*/
 }
 
 .HeroBadge {
@@ -12,22 +13,47 @@
     font-size: 14px;
     padding: 8px 18px;
     border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0, 136, 255, 0.6); /* сияние */
+    width: fit-content;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6); /* сияние */
+    margin-bottom: -20px;
+
 }
 
 .HeroBlock {
+    /*margin-top: 0;*/
+    /*padding-top: 0;*/
+    margin-top: -70px;
     background-color: #000509;
     position: relative;
+}
 
+.HeroBlock .row {
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 .HeroGlow {
     position: absolute;
-    bottom: -300px; /* ← вот ТВОЙ РЫЧАГ 💪 */
+    bottom: -350px; /* ← вот ТВОЙ РЫЧАГ 💪 */
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    height: 600px;
+    height: 100%;
     background: url('../assets/bgH.png') center/contain no-repeat;
     pointer-events: none; /* чтобы не мешал кликам */
+}
+
+.TopMargin {
+    margin-top: 100px;
+}
+
+.LeftMargin {
+    margin-left: -50px;
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+
+.RightMargin {
+    margin-right: 30px;
 }
