@@ -1,15 +1,15 @@
 import React, {Component} from 'react';
-import CarouselBox from "../Components/CarouselBox";
 import {Container, Card, Col, Row, Button} from "react-bootstrap";
 import one from "../assets/1.svg";
 import two from "../assets/2.svg";
 import three from "../assets/3.svg";
+import HeroBlock from "../Components/HeroBlock";
 
 export default class Hem extends Component {
     render() {
         return (
             <>
-                <CarouselBox/>
+                <HeroBlock/>
 
                 <Container>
 
