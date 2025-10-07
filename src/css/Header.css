@@ -1,7 +1,36 @@
-.custom-navbar {
-    display: flex;
-    gap: 50px;
-    /*justify-content: space-around;*/
-    align-items: center;
-    margin: auto;
+.custom-container {
+     padding-left: 16px;
+     padding-right: 16px;
+ }
+
+
+
+.custom-nav .nav-link {
+    color: #ffffff !important;   /* цвет текста */
+    font-size: 16px;             /* размер шрифта */
+    font-weight: 200;            /* насыщенность */
+    margin-top: 4px;             /* отступ сверху */
+    text-transform: none;        /* чтобы текст не был капсом */
+}
+
+.custom-nav .nav-link:hover {
+    color: #00baff !important;   /* цвет при наведении */
+}
+
+
+@media (min-width: 1200px) {
+    .custom-container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .custom-container {
+        flex-direction: column;
+        gap: 10px; /* расстояние между элементами */
+        text-align: center;
+    }
 }
