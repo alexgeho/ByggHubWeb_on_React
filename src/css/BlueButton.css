@@ -1,0 +1,12 @@
+.BlueButton {
+    width: 202px;
+    height: 59px;
+    background-color: #0785F4;
+    color: #FFFFFF;
+    border-radius: 15px;
+}
+
+.BlueButton:hover {
+    background-color: #1A8CFF;
+    box-shadow: 0 8px 20px rgba(7, 133, 244, 0.4);
+}
