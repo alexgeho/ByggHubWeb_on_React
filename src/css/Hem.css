@@ -1,20 +1,30 @@
-.CustomCard {
-    background: transparent;
-    color: #ffffff; /* чтобы текст был читаем */
-    border: none; /* убирает стандартную границу */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* мягкая тень, если нужно */
+
+.HemPageDark,
+.HemPageLight {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    position: relative;
 }
 
 .HemPageDark {
     background-color: #000509;
-    width: 100%;
-}
-
-.CustomCard img {
-    max-width: 250px;
+    color: white;
 }
 
 .HemPageLight {
-    background-color: #E8F4FF;
-    width: 100%;
+    background-color: #f5f8ff;
+    color: #000;
+}
+
+.CustomCard {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    text-align: center;
+}
+
+
+
+.CustomCard img {
+    max-width: 250px;
 }

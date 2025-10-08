@@ -1,14 +1,44 @@
 .custom-nav .nav-link {
-    color: #ffffff !important;
-    font-size: 16px;
+    color: #B5C0C9 !important;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
     font-weight: 300;
     margin-top: 4px;
     text-transform: none;
+    line-height: 1.8em;
+    transition: color 0.3s ease;
+    z-index: 9999; /* всегда поверх */
+    background-color: rgba(0, 5, 9, 0.85); /* полупрозрачный фон при скролле */
+    backdrop-filter: blur(10px); /* эффект стекла */
+
+}
+
+/* При прокрутке делаем чуть плотнее фон */
+.CustomNavbar.scrolled {
+    background-color: rgba(0, 5, 9, 0.95);
+    backdrop-filter: blur(14px);
 }
 
 .custom-nav .nav-link:hover {
-    color: #00baff !important;
+    color: #ffffff !important;
 }
+
+/* --- Кнопка Login (outline-light кастом) --- */
+.btn-outline-light {
+    color: #B5C0C9;                 /* как неактивная ссылка */
+    border-color: #B5C0C9;          /* обводка того же цвета */
+    background-color: transparent;
+    font-weight: 500;
+    transition: all 0.25s ease;
+}
+
+.btn-outline-light:hover,
+.btn-outline-light:focus {
+    color: #ffffff;                 /* при наведении — белый текст */
+    border-color: #ffffff;          /* белая рамка */
+    background-color: rgba(255, 255, 255, 0.05); /* лёгкий белый блур */
+}
+
 
 .Navbar .btn {
     border-radius: 8px;
@@ -32,5 +62,22 @@
         flex-direction: column;
         gap: 10px;
         text-align: center;
+    }
+}
+
+.logo-img {
+    max-width: 205px;
+    height: auto;
+}
+
+.logo-img:hover {
+    transform: scale(1.04); /* лёгкое увеличение */
+    filter: drop-shadow(0 0 10px rgba(0, 150, 255, 0.6)); /* свечение как у Framer */
+}
+
+
+@media (max-width: 768px) {
+    .logo-img {
+        max-width: 150px;
     }
 }

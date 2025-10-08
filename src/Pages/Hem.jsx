@@ -26,7 +26,7 @@ export default class Hem extends Component {
                         <Row>
 
                             <Col md={4}>
-                                <Card className="CustomCard">
+                                <Card className="CustomCard"  >
                                     <Card.Img variant="top" src={one} style={{margin: '0 auto'}}/>
                                     <Card.Body>
                                         <Card.Title>Card 1</Card.Title>

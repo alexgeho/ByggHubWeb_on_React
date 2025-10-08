@@ -25,6 +25,14 @@
     margin-top: -70px;
     background-color: #000509;
     position: relative;
+
+    /* добавляем растяжение на всю ширину окна */
+    width: 100vw;
+    left: 50%;
+    margin-left: -50vw;
+
+    /* чтобы фон не обрезался при ресайзе */
+    overflow: hidden;
 }
 
 .HeroBlock .row {

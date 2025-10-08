@@ -1,32 +1,59 @@
-import React, { Component } from 'react';
-import { Button, Container, Nav, Navbar } from "react-bootstrap";
+import React, {Component} from 'react';
+import {Button, Container, Nav, Navbar} from "react-bootstrap";
 import logo from '../../img/logo.png';
 import {Link} from "react-router-dom";
 import './Header.css';
 import ArticlePage from "../../Pages/ArticlePage";
 
 export default class Header extends Component {
+
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
+    }
+
+    handleScroll = () => {
+        const navbar = document.querySelector(".CustomNavbar");
+        if (!navbar) return; // ← если не найден, просто выходим, без ошибок
+
+        if (window.scrollY > 20) {
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
+        }
+    };
+
+
     navbar = (
         <Navbar
             fixed="top"
             collapseOnSelect
             expand="md"
-            style={{ backgroundColor: "#000509" }}
+            style={{backgroundColor: "#000509"}}
             variant="dark"
         >
             <Container className="custom-container d-flex justify-content-between align-items-center">
                 {/* --- LOGO --- */}
-                <img
-                    src={logo}
-                    height="20"
-                    className="d-inline-block align-top"
-                    alt="Logo"
 
+                <Link to="/" className="navbar-brand d-flex align-items-center">
+                    <img
+                        src={logo}
+                        width="205"
+                        height="56"
+                        className="d-inline-block align-top logo-img"
+                        alt="ByggHub Logo"
+                    />
+                </Link>
 
-                />
 
                 {/* --- TOGGLER (для мобильных) --- */}
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
+
+
+
 
                 {/* --- NAVIGATION LINKS --- */}
                 <Navbar.Collapse id="responsive-navbar-nav">
