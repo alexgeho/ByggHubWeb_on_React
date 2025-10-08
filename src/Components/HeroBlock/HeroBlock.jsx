@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import {Col, Row} from "react-bootstrap";
-import TitleAndSubtitle from "./TitleAndSubtitle";
-import BlueButton from "./BlueButton";
-import phone1 from "../assets/p1.png";
-import '../css/HeroBlock.css';
+import TitleAndSubtitle from "../TitleAndSubtitle/TitleAndSubtitle";
+import BlueButton from "../BlueButton/BlueButton";
+import phone1 from "../../assets/p1.png";
+import './HeroBlock.css';
 
 export default class HeroBlock extends Component {
     render() {
@@ -17,7 +17,11 @@ export default class HeroBlock extends Component {
 
                         <div className="HeroBadge">Built by construction pros, for construction pros</div>
 
-                        <TitleAndSubtitle/>
+                        <TitleAndSubtitle
+                            title={<>Get rid of chaos<br/>and boring paperwork</>}
+                            subtitle={<>Automate work time-tracking, keep tasks, documents,<br/>and team communication
+                                in one place.</>}
+                        />
 
                         <BlueButton/>
 

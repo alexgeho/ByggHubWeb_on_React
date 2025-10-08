@@ -1,6 +1,6 @@
 .Title {
-    font-size: 64px;
-    font-weight: 200;
+    font-size: 40px;
+    font-weight: lighter;
     font-family: "DM Sans", sans-serif;
     color: #FFFFFF;
 }
@@ -10,4 +10,5 @@
     font-weight: 200;
     font-family: "DM Sans", sans-serif;
     color: #B5C0C9;
+    z-index: 1;
 }

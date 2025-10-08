@@ -5,11 +5,16 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* мягкая тень, если нужно */
 }
 
-.HemPage {
-    background-color: #000509; /* твой цвет */
-    width: 100vw;
+.HemPageDark {
+    background-color: #000509;
+    width: 100%;
 }
 
 .CustomCard img {
     max-width: 250px;
+}
+
+.HemPageLight {
+    background-color: #E8F4FF;
+    width: 100%;
 }

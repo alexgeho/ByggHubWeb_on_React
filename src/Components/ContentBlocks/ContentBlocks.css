@@ -1,0 +1,20 @@
+.PricingSection {
+    background-color: #050b15;
+    color: #ffffff;
+}
+
+.ContentBadge {
+    display: inline-block;
+    background: rgba(0, 123, 255, 0.1);
+    color: #0d6efd;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.PricingCard {
+    background: linear-gradient(145deg, #0a0f1c, #111829);
+    border: none;
+    border-radius: 12px;
+}

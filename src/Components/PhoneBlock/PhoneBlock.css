@@ -1,0 +1,41 @@
+.PhoneBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 20px 80px;
+    margin-bottom: 10px;
+    max-width: 800px;
+    height: 340px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
+}
+
+.PhoneBlock.reverse {
+    flex-direction: row-reverse;
+}
+
+.PhoneImage {
+    width: 320px;
+    height: auto;
+    object-fit: contain;
+    position: relative;
+    transform: translateX(-40px) translateY(200px);
+    transition: transform 0.3s ease;
+
+}
+
+.PhoneBlock.reverse .PhoneImage {
+    transform: translateX(40px) translateY(-200px);
+}
+
+.PhoneText {
+    flex: 1;
+    padding: 20px 30px;
+    position: relative;
+    z-index: 1;
+}
+
+
