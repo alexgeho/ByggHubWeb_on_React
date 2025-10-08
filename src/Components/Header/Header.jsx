@@ -32,7 +32,7 @@ export default class Header extends Component {
                         <Nav.Link as={Link} to="/about">Om oss</Nav.Link>
                         <Nav.Link as={Link} to="/faq">FAQ</Nav.Link>
                         <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
-                        <Nav.Link as={Link} to="/kontakt">Kontakt</Nav.Link>
+                        <Nav.Link as={Link} to="/Contacts">Kontakt</Nav.Link>
                     </Nav>
 
                     {/* --- BUTTONS (LOGIN + TRY FOR FREE) --- */}
