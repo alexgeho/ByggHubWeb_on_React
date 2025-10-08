@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import logo from '../../img/logo.png';
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 import './Header.css';
+import ArticlePage from "../../Pages/ArticlePage";
 
 export default class Header extends Component {
     navbar = (
@@ -20,6 +21,8 @@ export default class Header extends Component {
                     height="20"
                     className="d-inline-block align-top"
                     alt="Logo"
+
+
                 />
 
                 {/* --- TOGGLER (для мобильных) --- */}

@@ -1,77 +1,64 @@
-import React, {Component} from 'react';
-import {Card, Col, Container, ListGroup, Row} from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { Container, Row, Col, Card } from "react-bootstrap";
+import postImg from "../assets/post-cover.jpg";
+import "../css/Blog.css";
 
-export default class Blog extends Component {
-    render() {
-        return (
-            <Container>
-
-                <Row>
-
-                    <Col md="9">
-                        <h5 className="text-center mt-1">
-                            Articles
-                        </h5>
-                        <article className="mb-4 p-3 border rounded">
-                            <img src="https://picsum.photos/200" alt="Post 1" className="mb-3 img-fluid rounded" />
-                            <h4>Blog Title</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, unde.
-                            </p>
-                        </article>
-
-                        <article className="d-flex align-items-start mb-4 p-3 border rounded">
-                            <img src="https://picsum.photos/201" alt="Post 2"  className="me-3 mb-3 img-fluid rounded" />
-
-                            <div>
-                            <h4>Another Post</h4>
-                            <p>
-                                Nulla vitae elit libero, a pharetra augue mollis interdum.
-                            </p>
-                            </div>
-                        </article>
-
-                        <article className="mb-4 p-3 border rounded">
-                            <img src="https://picsum.photos/202" alt="Post 3" className="mb-3 img-fluid rounded" />
-                            <h4>Third Post</h4>
-                            <p>
-                                Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-                            </p>
-                        </article>
-                    </Col>
-
-                    <Col md="3">
-                   <h5 className="text-center mt-1">
-                       Category
-                   </h5>
-                        <Card>
-                            <ListGroup variant="flush">
-                                <ListGroup.Item><a href="#">Link 1</a></ListGroup.Item>
-                                <ListGroup.Item><a href="#">Link 1</a></ListGroup.Item>
-                                <ListGroup.Item>Html/Css</ListGroup.Item>
-                                <ListGroup.Item>Java</ListGroup.Item>
-                            </ListGroup>
-                        </Card>
-
-                        <Card>
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the bulk of the card's content.
-                                </Card.Text>
-                                <Card.Link href="#">Card Link</Card.Link>
-                                <Card.Link href="#">Another Link</Card.Link>
-                            </Card.Body>
-                        </Card>
-
-                    </Col>
-
-                </Row>
-
-
-
-            </Container>
-        );
-    }
+function ArticleCard({ slug, tag="Management", title, excerpt, image = postImg }) {
+    return (
+        <Card
+            as={Link}
+            to={`/blog/${slug}`}
+            className="BlogCard d-block text-reset text-decoration-none"
+        >
+            <Row className="g-0 align-items-center">
+                <Col md="auto">
+                    <div className="BlogThumb">
+                        <img src={image} alt={title} />
+                    </div>
+                </Col>
+                <Col>
+                    <Card.Body>
+                        <span className="BlogBadge">{tag}</span>
+                        <Card.Title className="mb-2">{title}</Card.Title>
+                        <Card.Text className="text-muted mb-0">{excerpt}</Card.Text>
+                    </Card.Body>
+                </Col>
+            </Row>
+        </Card>
+    );
 }
 
+export default function Blog() {
+    return (
+        <>
+            <section className="BlogHero HemPageDark">
+                <Container>
+                    <Row className="justify-content-center text-center">
+                        <Col lg={9}>
+                            <div className="SectionBadge">Our blog</div>
+                            <h1 className="BlogTitle">Useful articles</h1>
+                            <p className="BlogSubtitle">
+                                Tips, insights, and practical advice for builders and project managers who want
+                                less paperwork, smoother communication, and more clarity on site.
+                            </p>
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
+
+            <section className="BlogBody HemPageLight">
+                <Container>
+                    <Row className="g-4">
+                        <Col md={8}>
+                            <ArticleCard
+                                slug="scaling-your-business-with-saas-guide-growth"
+                                title="Scaling Your Business with SaaS: Guide to Growth and Flexibility"
+                                excerpt="How construction companies reduce admin time, keep projects in sync, and create real transparency using ByggHub-like workflows."
+                            />
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
+        </>
+    );
+}
