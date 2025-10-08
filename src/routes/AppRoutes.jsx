@@ -6,6 +6,8 @@ import Kontakt from "../Pages/Kontakt";
 import Blog from "../Pages/Blog";
 import Login from "../Pages/Login";
 import Signup from "../Pages/Signup";
+import About from "../Pages/About";
+import Faq from "../Pages/Faq";
 
 export default function AppRoutes() {
     return (
@@ -16,6 +18,10 @@ export default function AppRoutes() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/faq" element={<Faq />} />
+
+
 
         </Routes>
     );

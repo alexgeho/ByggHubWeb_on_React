@@ -29,9 +29,10 @@ export default class Header extends Component {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mx-auto gap-3 custom-nav">
                         <Nav.Link as={Link} to="/">Hem</Nav.Link>
-                        <Nav.Link as={Link} to="/om_oss">Om oss</Nav.Link>
-                        <Nav.Link as={Link} to="/kontakt">Kontakt</Nav.Link>
+                        <Nav.Link as={Link} to="/about">Om oss</Nav.Link>
+                        <Nav.Link as={Link} to="/faq">FAQ</Nav.Link>
                         <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
+                        <Nav.Link as={Link} to="/kontakt">Kontakt</Nav.Link>
                     </Nav>
 
                     {/* --- BUTTONS (LOGIN + TRY FOR FREE) --- */}
