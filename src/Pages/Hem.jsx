@@ -13,6 +13,7 @@ import PhoneBlock from "../Components/PhoneBlock/PhoneBlock";
 import BlueBlock from "../Components/BlueBlock/BlueBlock";
 import TitleAndSubtitle from "../Components/TitleAndSubtitle/TitleAndSubtitle";
 import ContentBlocks from "../Components/ContentBlocks/ContentBlocks";
+import FAQBlock from "../Components/FAQBlock/FAQBlock";
 
 export default class Hem extends Component {
     render() {
@@ -125,6 +126,7 @@ export default class Hem extends Component {
                 <div className="HemPageDark">
 
                         <ContentBlocks/>
+                             <FAQBlock/>
 
                 </div>
 

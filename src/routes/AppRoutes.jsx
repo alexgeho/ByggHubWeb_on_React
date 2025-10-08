@@ -4,6 +4,8 @@ import Hem from "../Pages/Hem";
 import OmOss from "../Pages/Om_oss";
 import Kontakt from "../Pages/Kontakt";
 import Blog from "../Pages/Blog";
+import Login from "../Pages/Login";
+import Signup from "../Pages/Signup";
 
 export default function AppRoutes() {
     return (
@@ -12,6 +14,9 @@ export default function AppRoutes() {
             <Route path="/om_oss" element={<OmOss />} />
             <Route path="/kontakt" element={<Kontakt />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+
         </Routes>
     );
 }
