@@ -24,23 +24,6 @@ export default class Hem extends Component {
                 <div className="HemPageDark">
                     <HeroBlock/>
 
-                    <Container className="FeaturesSection">
-
-                        <Row>
-                            <Col md={4} className="d-flex flex-column justify-content-center align-items-center">
-                                <Features image={one} title="Collecting work hours manually" subtitle="takes forever — and it’s full of mistakes"/>
-                            </Col>
-
-                            <Col md={4} className="d-flex flex-column justify-content-center align-items-center">
-                                <Features image={two} title="I can’t see who’s working and what’s" subtitle="actually getting done — unless I call around all day."/>
-                            </Col>
-                            <Col>
-                                <Features image={three} title="Info gets lost in different places" subtitle="while I juggle WhatsApp, email, and paper"/>
-                            </Col>
-                        </Row>
-
-
-                    </Container>
 
 
 

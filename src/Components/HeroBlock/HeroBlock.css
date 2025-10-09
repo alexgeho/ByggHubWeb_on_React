@@ -8,31 +8,27 @@
 
 .HeroBadge {
     display: inline-block;
-    background: #0a1624; /* фон под текстом */
+    background: rgba(10, 18, 36, 0.9); /* слегка прозрачный фон */
     color: #ffffff;
-    font-size: 14px;
+    font-size: 17px;
     padding: 8px 18px;
     border-radius: 20px;
     width: fit-content;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6); /* сияние */
-    margin-bottom: -20px;
+    box-shadow: 0 0 16px rgba(0, 123, 255, 0.5); /* легкое голубоватое свечение */
+    margin-top: 80px;
 
 }
 
 .HeroBlock {
-    /*margin-top: 0;*/
-    /*padding-top: 0;*/
     margin-top: -70px;
     background-color: #000509;
     position: relative;
-
-    /* добавляем растяжение на всю ширину окна */
     width: 100vw;
     left: 50%;
     margin-left: -50vw;
-
-    /* чтобы фон не обрезался при ресайзе */
     overflow: hidden;
+    z-index: 0;
+
 }
 
 .HeroBlock .row {
@@ -42,13 +38,16 @@
 
 .HeroGlow {
     position: absolute;
-    bottom: -350px; /* ← вот ТВОЙ РЫЧАГ 💪 */
+    bottom: -150px; /* ← вот ТВОЙ РЫЧАГ 💪 */
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
     height: 100%;
     background: url('../../assets/bgH.png') center/contain no-repeat;
     pointer-events: none; /* чтобы не мешал кликам */
+    z-index: -1;
+    filter: blur(40px); /* сглаживает пиксели */
+    opacity: 0.9; /* делает свечение мягче */
 }
 
 .TopMargin {

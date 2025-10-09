@@ -1,15 +1,19 @@
 import React, {Component} from 'react';
-import {Col, Row} from "react-bootstrap";
+import {Col, Container, Row} from "react-bootstrap";
 import TitleAndSubtitle from "../TitleAndSubtitle/TitleAndSubtitle";
 import BlueButton from "../BlueButton/BlueButton";
 import phone1 from "../../assets/p1.png";
 import './HeroBlock.css';
+import Features from "../Features3/Features";
+import one from "../../assets/1.svg";
+import two from "../../assets/2.svg";
+import three from "../../assets/3.svg";
 
 export default class HeroBlock extends Component {
     render() {
         return (
 
-            <div className="HeroBlock d-flex justify-content-center align-items-center">
+            <div className="HeroBlock d-flex flex-column justify-content-center align-items-center">
 
                 <Row className="TopMargin">
 
@@ -34,6 +38,33 @@ export default class HeroBlock extends Component {
                 </Row>
 
                 <div className="HeroGlow"></div>
+
+                    <Row style={{ marginTop: "80px"}}><Col md={12}>
+
+                        <TitleAndSubtitle
+                            align="center"
+                            title="We know what problems you have"
+                            subtitle="because we had them too"
+                        />
+
+                    </Col></Row>
+
+                    <Row>
+                        <Col md={4} className="d-flex flex-column justify-content-center align-items-center">
+                            <Features image={one} title={<>Collecting work hours<br/>manually</>} subtitle="takes forever — and it’s full of mistakes"/>
+                        </Col>
+
+                        <Col md={4} className="d-flex flex-column justify-content-center align-items-center">
+                            <Features image={two} title={<>I can’t see who’s <br/>working and what’s</>} subtitle="actually getting done — unless I call around all day."/>
+                        </Col>
+
+                        <Col md={4} className="d-flex flex-column justify-content-center align-items-center">
+                            <Features image={three} title={<>Info gets lost <br/>in different places</>} subtitle="while I juggle WhatsApp, email, and paper"/>
+                        </Col>
+                    </Row>
+
+
+
 
             </div>
         );
