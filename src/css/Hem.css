@@ -24,7 +24,11 @@
 }
 
 
-
 .CustomCard img {
     max-width: 250px;
+}
+
+
+.FeaturesSection {
+    background: transparent;
 }

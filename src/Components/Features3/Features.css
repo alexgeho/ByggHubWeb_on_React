@@ -1,0 +1,18 @@
+.Image {
+    height: 225px;
+}
+
+.Title {
+    font-size: 32px;
+    font-weight: lighter;
+    font-family: "DM Sans", sans-serif;
+    color: #FFFFFF;
+}
+
+.Subtitle {
+    font-size: 20px;
+    font-weight: 200;
+    font-family: "DM Sans", sans-serif;
+    color: #B5C0C9;
+    z-index: 1;
+}

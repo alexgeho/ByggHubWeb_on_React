@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Container, Card, Col, Row, Button} from 'react-bootstrap';
+import {Container, Col, Row} from 'react-bootstrap';
 import one from '../assets/1.svg';
 import two from '../assets/2.svg';
 import three from '../assets/3.svg';
@@ -14,6 +14,7 @@ import BlueBlock from "../Components/BlueBlock/BlueBlock";
 import TitleAndSubtitle from "../Components/TitleAndSubtitle/TitleAndSubtitle";
 import ContentBlocks from "../Components/ContentBlocks/ContentBlocks";
 import FAQBlock from "../Components/FAQBlock/FAQBlock";
+import Features from "../Components/Features3/Features";
 
 export default class Hem extends Component {
     render() {
@@ -22,56 +23,27 @@ export default class Hem extends Component {
             <>
                 <div className="HemPageDark">
                     <HeroBlock/>
-                    <Container>
+
+                    <Container className="FeaturesSection">
+
                         <Row>
-
-                            <Col md={4}>
-                                <Card className="CustomCard"  >
-                                    <Card.Img variant="top" src={one} style={{margin: '0 auto'}}/>
-                                    <Card.Body>
-                                        <Card.Title>Card 1</Card.Title>
-                                        <Card.Text>
-                                            Some quick example text to build on the card title and make up the bulk of
-                                            the
-                                            card's content.
-                                        </Card.Text>
-                                        <Button variant="primary">Läs mer</Button>
-                                    </Card.Body>
-                                </Card>
+                            <Col md={4} className="d-flex flex-column justify-content-center align-items-center">
+                                <Features image={one} title="Collecting work hours manually" subtitle="takes forever — and it’s full of mistakes"/>
                             </Col>
 
-                            <Col md={4}>
-                                <Card className="CustomCard">
-                                    <Card.Img variant="top" src={two} style={{margin: '0 auto'}}/>
-                                    <Card.Body>
-                                        <Card.Title>Card 2</Card.Title>
-                                        <Card.Text>
-                                            Some quick example text to build on the card title and make up the bulk of
-                                            the
-                                            card's content.
-                                        </Card.Text>
-                                        <Button variant="primary">Läs mer</Button>
-                                    </Card.Body>
-                                </Card>
+                            <Col md={4} className="d-flex flex-column justify-content-center align-items-center">
+                                <Features image={two} title="I can’t see who’s working and what’s" subtitle="actually getting done — unless I call around all day."/>
                             </Col>
-
-                            <Col md={4}>
-                                <Card className="CustomCard">
-                                    <Card.Img variant="top" src={three} style={{margin: '0 auto'}}/>
-                                    <Card.Body>
-                                        <Card.Title>Card 3</Card.Title>
-                                        <Card.Text>
-                                            Some quick example text to build on the card title and make up the bulk of
-                                            the
-                                            card's content.
-                                        </Card.Text>
-                                        <Button variant="primary">Läs mer</Button>
-                                    </Card.Body>
-                                </Card>
+                            <Col>
+                                <Features image={three} title="Info gets lost in different places" subtitle="while I juggle WhatsApp, email, and paper"/>
                             </Col>
-
                         </Row>
+
+
                     </Container>
+
+
+
                 </div>
 
 
