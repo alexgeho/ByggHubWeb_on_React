@@ -35,9 +35,9 @@ export default class Header extends Component {
             style={{backgroundColor: "#000509"}}
             variant="dark"
         >
-            <Container className="custom-container d-flex justify-content-between align-items-center">
-                {/* --- LOGO --- */}
+            <Container className="custom-container d-flex align-items-center">
 
+                {/* --- LOGO --- */}
                 <Link to="/" className="navbar-brand d-flex align-items-center">
                     <img
                         src={logo}
@@ -47,11 +47,6 @@ export default class Header extends Component {
                         alt="ByggHub Logo"
                     />
                 </Link>
-
-
-                {/* --- TOGGLER (для мобильных) --- */}
-                <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
-
 
 
 
@@ -66,7 +61,7 @@ export default class Header extends Component {
                     </Nav>
 
                     {/* --- BUTTONS (LOGIN + TRY FOR FREE) --- */}
-                    <div className="d-flex align-items-center gap-2">
+                    <div className="d-flex flex-column align-items-center gap-2">
                         <Button
                             variant="outline-light"
                             className="px-3"
@@ -85,7 +80,12 @@ export default class Header extends Component {
                             Try for free
                         </Button>
                     </div>
+
                 </Navbar.Collapse>
+
+                {/* --- TOGGLER (для мобильных) --- */}
+                <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
+
             </Container>
         </Navbar>
     );
