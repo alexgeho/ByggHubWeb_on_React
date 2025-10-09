@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Container, Col, Row} from 'react-bootstrap';
 import one from '../assets/1.svg';
-import two from '../assets/2.svg';
+import two from '../assets/2.svg'
 import three from '../assets/3.svg';
 import phone2 from '../assets/p2.png';
 import phone3 from '../assets/p3.png';
@@ -23,24 +23,23 @@ export default class Hem extends Component {
             <>
                 <div className="HemPageDark">
                     <HeroBlock/>
-
                 </div>
 
 
-                <div className="
-                HemPageLight
-                d-flex
-                flex-column
-                justify-content-center
-                align-items-center gap-5
-                "
-                     style={{padding: '50px'}}
-                >
+                <div className="HemPageLight d-flex flex-column  justify-content-center align-items-center gap-1">
+
+                    <TitleAndSubtitle
+                        variant="white"
+                        align="center"
+                        title="We know what problems you have"
+                        subtitle=""
+                    />
 
                     <PhoneBlock
                         image={phone2}
                         title="Auto Time Tracking"
                         text="GPS-based check-in/check-out, automatic shift logs. Export to Excel in 3 clicks."
+
                     />
 
                     <PhoneBlock
@@ -77,8 +76,8 @@ export default class Hem extends Component {
 
                 <div className="HemPageDark">
 
-                        <ContentBlocks/>
-                             <FAQBlock/>
+                    <ContentBlocks/>
+                    <FAQBlock/>
 
                 </div>
 

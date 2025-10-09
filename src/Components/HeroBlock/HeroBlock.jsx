@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Col, Container, Row} from "react-bootstrap";
+import {Col, Row} from "react-bootstrap";
 import TitleAndSubtitle from "../TitleAndSubtitle/TitleAndSubtitle";
 import BlueButton from "../BlueButton/BlueButton";
 import phone1 from "../../assets/p1.png";
@@ -15,7 +15,7 @@ export default class HeroBlock extends Component {
 
             <div className="HeroBlock d-flex flex-column justify-content-center align-items-center">
 
-                <Row className="TopMargin">
+                <Row>
 
                     <Col xs={12} xl={8} className="LeftMargin d-flex flex-column">
 
@@ -32,42 +32,54 @@ export default class HeroBlock extends Component {
                     </Col>
 
                     <Col sm={4} className="RightMargin">
-                        <img src={phone1} alt="App preview" className="imgHero"/>
+
+                        <div className="GlowWrapper">
+
+                            <div className="HeroGlow"></div>
+                            <img src={phone1} alt="App preview" className="imgHero"/>
+
+                        </div>
+
+
                     </Col>
 
                 </Row>
 
-                <div className="HeroGlow"></div>
 
-                    <Row style={{ marginTop: "80px"}}><Col md={12}>
+                <Row className="mt-5 mt-md-6">
+
+
+                    <Col md={12}>
 
                         <TitleAndSubtitle
-                            align="center"
+                            align="left"
                             title="We know what problems you have"
                             subtitle="because we had them too"
                         />
 
                     </Col></Row>
 
-                    <Row>
-                        <Col md={4} className="d-flex flex-column justify-content-center align-items-center">
-                            <Features image={one} title={<>Collecting work hours<br/>manually</>} subtitle="takes forever — and it’s full of mistakes"/>
-                        </Col>
+                <Row>
+                    <Col md={4} className="d-flex flex-column justify-content-center align-items-center">
+                        <Features image={one} title={<>Collecting work hours <br/>manually</>}
+                                  subtitle="takes forever — and it’s full of mistakes"/>
+                    </Col>
 
-                        <Col md={4} className="d-flex flex-column justify-content-center align-items-center">
-                            <Features image={two} title={<>I can’t see who’s <br/>working and what’s</>} subtitle="actually getting done — unless I call around all day."/>
-                        </Col>
+                    <Col md={4} className="d-flex flex-column justify-content-center align-items-center">
+                        <Features image={two} title={<>I can’t see who’s <br/>working and what’s</>}
+                                  subtitle="actually getting done — unless I call around all day."/>
+                    </Col>
 
-                        <Col md={4} className="d-flex flex-column justify-content-center align-items-center">
-                            <Features image={three} title={<>Info gets lost in different places</>} subtitle="while I juggle WhatsApp, email, and paper"/>
-                        </Col>
-                    </Row>
-
-
+                    <Col md={4} className="d-flex flex-column justify-content-center align-items-center">
+                        <Features image={three} title={<>Info gets lost in different places</>}
+                                  subtitle="while I juggle WhatsApp, email, and paper"/>
+                    </Col>
+                </Row>
 
 
             </div>
-        );
+        )
+
     }
 }
 

@@ -1,5 +1,5 @@
 .Title {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 200;
     font-family: "DM Sans", sans-serif;
     color: #FFFFFF;
@@ -11,6 +11,7 @@
     font-family: "DM Sans", sans-serif;
     color: #B5C0C9;
     z-index: 1;
+
 }
 
 .TitleAndSubtitle.centered {
@@ -22,12 +23,26 @@
 
 /* FEATURES (средний размер) */
 .TitleAndSubtitle.features .Title {
-    font-size: 36px;
-    font-weight: 500;
+    font-size: 28px;
+    font-weight: 200;
     color: #fff;
 }
 
 .TitleAndSubtitle.features .Subtitle {
+    font-size: 18px;
+    color: #85b0d9;
+    font-weight: 300;
+    margin-top: 30px;
+}
+
+/* White background */
+.TitleAndSubtitle.whiteBackground .Title {
+    font-size: 28px;
+    font-weight: 300;
+    color: #052D50;
+}
+
+.TitleAndSubtitle.whiteBackground .Subtitle {
     font-size: 18px;
     color: #85b0d9;
     font-weight: 300;
