@@ -8,6 +8,7 @@ const TitleAndSubtitle = ({title, subtitle, align="left", variant = "default"}) 
             ${align === "center" ? "centered" : ""}
             ${variant === "features" ? "features" : ""}
             ${variant === "white" ? "whiteBackground" : ""}
+            ${variant === "blue" ? "blueBlock" : ""}
             `.trim();
 
     return (

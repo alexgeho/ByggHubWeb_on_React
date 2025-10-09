@@ -15,6 +15,7 @@ import TitleAndSubtitle from "../Components/TitleAndSubtitle/TitleAndSubtitle";
 import ContentBlocks from "../Components/ContentBlocks/ContentBlocks";
 import FAQBlock from "../Components/FAQBlock/FAQBlock";
 import Features from "../Components/Features3/Features";
+import blueBlock from "../Components/BlueBlock/BlueBlock";
 
 export default class Hem extends Component {
     render() {
@@ -65,6 +66,7 @@ export default class Hem extends Component {
                     <BlueBlock>
 
                         <TitleAndSubtitle
+                            variant="blue"
                             title={<>We'll bulid custom features<br/>specifically for your workflow</>}
                             subtitle="Just tell us what your team needs — and we’ll implement it shortly. "
                         />
