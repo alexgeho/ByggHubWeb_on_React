@@ -17,7 +17,7 @@ export default class HeroBlock extends Component {
 
                 <Row className="TopMargin">
 
-                    <Col sm={8} className="LeftMargin d-flex flex-column">
+                    <Col xs={12} xl={8} className="LeftMargin d-flex flex-column">
 
                         <div className="HeroBadge">Built by construction pros, for construction pros</div>
 
@@ -59,7 +59,7 @@ export default class HeroBlock extends Component {
                         </Col>
 
                         <Col md={4} className="d-flex flex-column justify-content-center align-items-center">
-                            <Features image={three} title={<>Info gets lost <br/>in different places</>} subtitle="while I juggle WhatsApp, email, and paper"/>
+                            <Features image={three} title={<>Info gets lost in different places</>} subtitle="while I juggle WhatsApp, email, and paper"/>
                         </Col>
                     </Row>
 

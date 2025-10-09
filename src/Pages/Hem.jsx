@@ -37,40 +37,40 @@ export default class Hem extends Component {
                      style={{padding: '50px'}}
                 >
 
-                    {/*<PhoneBlock*/}
-                    {/*    image={phone2}*/}
-                    {/*    title="Auto Time Tracking"*/}
-                    {/*    text="GPS-based check-in/check-out, automatic shift logs. Export to Excel in 3 clicks."*/}
-                    {/*/>*/}
+                    <PhoneBlock
+                        image={phone2}
+                        title="Auto Time Tracking"
+                        text="GPS-based check-in/check-out, automatic shift logs. Export to Excel in 3 clicks."
+                    />
 
-                    {/*<PhoneBlock*/}
-                    {/*    image={phone3}*/}
-                    {/*    title="Photo Reports"*/}
-                    {/*    text="Workers upload jobsite photos right in the app. You get instant proof of progress."*/}
-                    {/*    reverse*/}
-                    {/*/>*/}
+                    <PhoneBlock
+                        image={phone3}
+                        title="Photo Reports"
+                        text="Workers upload jobsite photos right in the app. You get instant proof of progress."
+                        reverse
+                    />
 
-                    {/*<PhoneBlock*/}
-                    {/*    image={phone4}*/}
-                    {/*    title="Project info in one place"*/}
-                    {/*    text="Tasks, drawings, and files stored per project. Everything in the right hands."*/}
-                    {/*/>*/}
+                    <PhoneBlock
+                        image={phone4}
+                        title="Project info in one place"
+                        text="Tasks, drawings, and files stored per project. Everything in the right hands."
+                    />
 
-                    {/*<PhoneBlock*/}
-                    {/*    image={phone5}*/}
-                    {/*    title="No mess, no distractions"*/}
-                    {/*    text="Create project-specific groups, so conversations stay focused and nothing gets lost. No personal chats like in WhatsApp — only clearly organized work chats."*/}
-                    {/*    reverse*/}
-                    {/*/>*/}
+                    <PhoneBlock
+                        image={phone5}
+                        title="No mess, no distractions"
+                        text="Create project-specific groups, so conversations stay focused and nothing gets lost. No personal chats like in WhatsApp — only clearly organized work chats."
+                        reverse
+                    />
 
-                    {/*<BlueBlock>*/}
+                    <BlueBlock>
 
-                    {/*    <TitleAndSubtitle*/}
-                    {/*        title={<>We'll bulid custom features<br/>specifically for your workflow</>}*/}
-                    {/*        subtitle="Just tell us what your team needs — and we’ll implement it shortly. "*/}
-                    {/*    />*/}
+                        <TitleAndSubtitle
+                            title={<>We'll bulid custom features<br/>specifically for your workflow</>}
+                            subtitle="Just tell us what your team needs — and we’ll implement it shortly. "
+                        />
 
-                    {/*</BlueBlock>*/}
+                    </BlueBlock>
 
 
                 </div>

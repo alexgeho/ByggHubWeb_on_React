@@ -1,41 +1,62 @@
+/* === MOBILE FIRST === */
 .PhoneBlock {
     display: flex;
+    flex-direction: column;       /* На мобильных — вертикально */
     align-items: center;
-    justify-content: space-between;
-    background: #FFFFFF;
+    justify-content: center;
+    background: #fff;
     border-radius: 20px;
-    padding: 20px 80px;
-    margin-bottom: 10px;
-    max-width: 800px;
-    height: 340px;
+    padding: 20px;                /* Безопасный внутренний отступ */
+    margin: 20px auto;
+    width: 100%;
+    max-width: 90vw;              /* Не шире экрана */
     overflow: hidden;
     position: relative;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
-}
-
-.PhoneBlock.reverse {
-    flex-direction: row-reverse;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
 .PhoneImage {
-    width: 320px;
+    width: 100%;
+    max-width: 280px;             /* ограничиваем ширину картинки */
     height: auto;
     object-fit: contain;
-    position: relative;
-    transform: translateX(-40px) translateY(200px);
-    transition: transform 0.3s ease;
-
-}
-
-.PhoneBlock.reverse .PhoneImage {
-    transform: translateX(40px) translateY(-200px);
+    margin-bottom: 15px;
+    transform: none;
 }
 
 .PhoneText {
-    flex: 1;
-    padding: 20px 30px;
-    position: relative;
+    text-align: center;
+    padding: 0 10px;
     z-index: 1;
 }
 
+/* === DESKTOP (ширина ≥ 768px) === */
+@media (min-width: 768px) {
+    .PhoneBlock {
+        flex-direction: row;         /* горизонтально */
+        justify-content: space-between;
+        max-width: 700px;
+        padding: 40px 80px;
+        height: 340px;
+    }
 
+    .PhoneBlock.reverse {
+        flex-direction: row-reverse;
+    }
+
+    .PhoneImage {
+        max-width: 320px;
+        transform: translateY(200px);
+        transition: transform 0.3s ease;
+    }
+
+    .PhoneBlock.reverse .PhoneImage {
+        transform: translateY(-200px);
+    }
+
+    .PhoneText {
+        flex: 1;
+        text-align: left;
+        padding: 20px 30px;
+    }
+}

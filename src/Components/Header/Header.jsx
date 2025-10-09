@@ -26,7 +26,6 @@ export default class Header extends Component {
         }
     };
 
-
     navbar = (
         <Navbar
             fixed="top"
@@ -35,7 +34,7 @@ export default class Header extends Component {
             style={{backgroundColor: "#000509"}}
             variant="dark"
         >
-            <Container className="custom-container d-flex align-items-center">
+            <Container className="custom-container d-flex  align-items-center">
 
                 {/* --- LOGO --- */}
                 <Link to="/" className="navbar-brand d-flex align-items-center">
@@ -61,7 +60,7 @@ export default class Header extends Component {
                     </Nav>
 
                     {/* --- BUTTONS (LOGIN + TRY FOR FREE) --- */}
-                    <div className="d-flex flex-column align-items-center gap-2">
+                    <div className="d-flex flex-column align-items-center gap-3">
                         <Button
                             variant="outline-light"
                             className="px-3"
