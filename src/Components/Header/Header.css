@@ -11,6 +11,10 @@
     box-sizing: border-box;
 }
 
+.custom-container > *:last-child {
+    margin-right: 20px;
+}
+
 /* === Главная кнопка "Try for free" === */
 .btn-primary {
     background: linear-gradient(145deg, #0066ff, #004de6);
@@ -169,7 +173,7 @@
 
     .custom-container {
         display: flex;
-        max-width: 1200px;
+        max-width: 1440px; /* чтобы красиво масштабировалось */
         padding: 16px 60px;
     }
 
@@ -178,10 +182,10 @@
     }
 
     .custom-nav .nav-link{
-        font-size: 22px;
+        font-size: 20px;
         color: #B5C0C9;
         font-family: "DM Sans", sans-serif; /* ← твой шрифт */
-        font-weight: 400;
+        font-weight: 200;
         letter-spacing: 0.3px;
         text-transform: none;
         transition: color 0.25s ease, border-color 0.25s ease;

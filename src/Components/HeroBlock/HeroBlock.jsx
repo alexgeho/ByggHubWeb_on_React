@@ -14,11 +14,11 @@ export default class HeroBlock extends Component {
     render() {
         return (
 
-            <div className="HeroBlock d-flex flex-column justify-content-center align-items-center">
+            <div className="HeroBlock">
 
                 <Row>
 
-                    <Col xs={12} xl={8} className="LeftMargin d-flex flex-column">
+                    <Col xs={12} xl={6} className="LeftMargin d-flex flex-column">
 
                         <Badge text="Built by construction pros, for construction pros"/>
 
@@ -32,7 +32,7 @@ export default class HeroBlock extends Component {
 
                     </Col>
 
-                    <Col sm={4} className="RightMargin">
+                    <Col xs={12} xl={6} className="RightMargin">
 
                         <div className="GlowWrapper">
 
