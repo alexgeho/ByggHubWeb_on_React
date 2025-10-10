@@ -1,6 +1,7 @@
-import React, { useState } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React, {useState} from "react";
+import {Container, Row, Col} from "react-bootstrap";
 import "./FAQBlock.css";
+import TitleAndSubtitle from "../TitleAndSubtitle/TitleAndSubtitle";
 
 const faqData = [
     {
@@ -29,11 +30,18 @@ export default function FAQBlock() {
     };
 
     return (
-        <section className="FAQSection HemPageDark py-5">
+        <section className="FAQSection HemPageDark">
             <Container>
                 <Row className="align-items-start">
+
                     <Col md={5}>
-                        <h2 className="FAQTitle">Frequently asked questions</h2>
+
+                        <TitleAndSubtitle
+                            title="Frequently asked questions"
+                            subtitle=""
+                            variant="pricingPackage"
+                        />
+
                     </Col>
 
                     <Col md={7}>
@@ -57,6 +65,8 @@ export default function FAQBlock() {
                             ))}
                         </div>
                     </Col>
+
+
                 </Row>
             </Container>
         </section>

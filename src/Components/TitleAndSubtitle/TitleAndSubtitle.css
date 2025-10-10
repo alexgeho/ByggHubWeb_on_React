@@ -11,7 +11,6 @@
     font-family: "DM Sans", sans-serif;
     color: #B5C0C9;
     z-index: 1;
-
 }
 
 .TitleAndSubtitle.centered {
@@ -29,6 +28,7 @@
 }
 
 .TitleAndSubtitle.features .Subtitle {
+    font-family: "DM Sans", sans-serif;
     font-size: 18px;
     color: #85b0d9;
     font-weight: 300;
@@ -66,13 +66,13 @@
     font-weight: 200;
     margin-top: 20px;
 }
+
 .TitleAndSubtitle.pricingTitle .Title {
     font-family: "DM Sans", sans-serif;
     font-size: 20px;
     font-weight: 400;
     color: #FFFFFF;
     margin-top: 20px;
-
 }
 
 .TitleAndSubtitle.pricingTitle .Subtitle {
