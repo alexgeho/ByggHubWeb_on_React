@@ -1,15 +1,15 @@
 import React from 'react';
 import './BlueBlock.css';
 
-const BlueBlock = ({ children }) => {
-        return (
-            <div className="BlueBlock">
-                {children}
+const BlueBlock = ({children}) => {
+    return (
+        <div className="BlueBlock">
+            {children}
 
-                <button className="whiteButton">Learn More</button>
+            <button className="whiteButton">Learn More</button>
 
-            </div>
-        );
+        </div>
+    );
 
 };
 

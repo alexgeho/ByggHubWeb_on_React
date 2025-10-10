@@ -3,57 +3,68 @@ import {Card, Col, Row} from "react-bootstrap";
 import TitleAndSubtitle from "../TitleAndSubtitle/TitleAndSubtitle";
 import BlueButton from "../BlueButton/BlueButton";
 import './ContentBlocks.css';
+import Badge from "../Badge/Badge";
+import checkMark from "../../assets/checkmark.svg";
 
 export default class ContentBlocks extends Component {
     render() {
         return (
 
-            <div className="HeroBlock d-flex justify-content-center align-items-center">
+            <div className="d-flex justify-content-center align-items-center">
 
-                <Row className="TopMargin">
+                <Row>
 
-                    <Col sm={6} className="LeftMargin d-flex flex-column">
+                    <Col sm={12} xl={6} className="d-flex flex-column ps-4 mt-2">
 
-                        <div className="ContentBadge">Pricing</div>
+                        <Badge text="Pricing"/>
 
                         <TitleAndSubtitle
                             title="Try before you pay"
-                            subtitle="14-day free trial. All features. No credit card."
-                        />
+                            subtitle="14-day free trial. All features. No credit card."/>
 
                         <BlueButton/>
 
                     </Col>
 
-                    <Col md={6}>
-                        <Card className="PricingCard text-light p-4 shadow-sm">
-                            <Card.Body>
-                                <h5 className="fw-semibold mb-1">Full package</h5>
-                                <p className="text-secondary mb-3">Every feature we have</p>
-                                <h3 className="fw-bold mb-4">€50 per month per 10 users</h3>
+                    <Col sm={12} xl={6} className="d-flex flex-column">
+                        <Card className="PricingCard">
 
-                                <Row>
-                                    <Col xs={6}>
+                            <Card.Body>
+
+                                <TitleAndSubtitle
+                                    title="Full package"
+                                    subtitle="Every feature we haves"
+                                    variant="pricingTitle"
+                                />
+
+                                <TitleAndSubtitle
+                                    title="€50 per month per 10 users"
+                                    subtitle=""
+                                    variant="pricingPackage"
+                                />
+
+
+                                <Row >
+                                    <Col sm={12} xl={6}>
                                         <ul className="list-unstyled small">
-                                            <li>✅ GPS and manual time tracking</li>
-                                            <li>✅ Task manager</li>
-                                            <li>✅ File manager</li>
-                                            <li>✅ Group & direct chats</li>
+                                            <li><img src={checkMark} alt="checkMark"/> GPS and manual time tracking</li>
+                                            <li><img src={checkMark} alt="checkMark"/> Task manager</li>
+                                            <li><img src={checkMark} alt="checkMark"/> File manager</li>
+                                            <li><img src={checkMark} alt="checkMark"/> Group & direct chats</li>
                                         </ul>
                                     </Col>
-                                    <Col xs={6}>
+                                    <Col sm={12} xl={6}>
                                         <ul className="list-unstyled small">
-                                            <li>✅ Photo reports</li>
-                                            <li>✅ Full data export</li>
-                                            <li>✅ Web and mobile access</li>
-                                            <li>✅ Email & chat support</li>
+                                            <li><img src={checkMark} alt="checkMark"/> Photo reports</li>
+                                            <li><img src={checkMark} alt="checkMark"/> Full data export</li>
+                                            <li><img src={checkMark} alt="checkMark"/> Web and mobile access</li>
+                                            <li><img src={checkMark} alt="checkMark"/> Email & chat support</li>
                                         </ul>
                                     </Col>
                                 </Row>
                             </Card.Body>
                         </Card>
                     </Col>
-
                 </Row>
 
 

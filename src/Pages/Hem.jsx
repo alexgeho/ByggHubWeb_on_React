@@ -1,8 +1,4 @@
 import React, {Component} from 'react';
-import {Container, Col, Row} from 'react-bootstrap';
-import one from '../assets/1.svg';
-import two from '../assets/2.svg'
-import three from '../assets/3.svg';
 import phone2 from '../assets/p2.png';
 import phone3 from '../assets/p3.png';
 import phone4 from '../assets/p4.png';
@@ -14,8 +10,6 @@ import BlueBlock from "../Components/BlueBlock/BlueBlock";
 import TitleAndSubtitle from "../Components/TitleAndSubtitle/TitleAndSubtitle";
 import ContentBlocks from "../Components/ContentBlocks/ContentBlocks";
 import FAQBlock from "../Components/FAQBlock/FAQBlock";
-import Features from "../Components/Features3/Features";
-import blueBlock from "../Components/BlueBlock/BlueBlock";
 
 export default class Hem extends Component {
     render() {

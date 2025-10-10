@@ -49,8 +49,7 @@
 }
 
 
-
-    /* White background */
+/* White background */
 .TitleAndSubtitle.blueBlock .Title {
     font-family: "DM Sans", sans-serif;
     font-size: 30px;
@@ -66,4 +65,35 @@
     color: #FFFFFF;
     font-weight: 200;
     margin-top: 20px;
+}
+.TitleAndSubtitle.pricingTitle .Title {
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-top: 20px;
+
+}
+
+.TitleAndSubtitle.pricingTitle .Subtitle {
+    font-family: "DM Sans", sans-serif;
+    font-size: 17px;
+    color: #B5C0C9;
+    font-weight: 200;
+}
+
+.TitleAndSubtitle.pricingPackage .Title {
+    font-family: "DM Sans", sans-serif;
+    font-size: 28px;
+    font-weight: 200;
+    color: #FFFFFF;
+    margin-top: 40px;
+
+}
+
+.TitleAndSubtitle.pricingPackage .Subtitle {
+    font-family: "DM Sans", sans-serif;
+    font-size: 17px;
+    color: #FFFFFF;
+    font-weight: 200;
 }

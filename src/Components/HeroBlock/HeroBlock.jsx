@@ -8,6 +8,7 @@ import Features from "../Features3/Features";
 import one from "../../assets/1.svg";
 import two from "../../assets/2.svg";
 import three from "../../assets/3.svg";
+import Badge from "../Badge/Badge";
 
 export default class HeroBlock extends Component {
     render() {
@@ -19,7 +20,7 @@ export default class HeroBlock extends Component {
 
                     <Col xs={12} xl={8} className="LeftMargin d-flex flex-column">
 
-                        <div className="HeroBadge">Built by construction pros, for construction pros</div>
+                        <Badge text="Built by construction pros, for construction pros"/>
 
                         <TitleAndSubtitle
                             title={<>Get rid of chaos<br/>and boring paperwork</>}
