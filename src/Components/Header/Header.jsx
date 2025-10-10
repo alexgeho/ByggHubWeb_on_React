@@ -51,7 +51,7 @@ export default class Header extends Component {
 
                 {/* --- NAVIGATION LINKS --- */}
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="mx-auto gap-3 custom-nav">
+                    <Nav className="custom-nav mx-auto gap-3">
                         <Nav.Link as={Link} to="/">Hem</Nav.Link>
                         <Nav.Link as={Link} to="/about">Om oss</Nav.Link>
                         <Nav.Link as={Link} to="/faq">FAQ</Nav.Link>
@@ -60,7 +60,7 @@ export default class Header extends Component {
                     </Nav>
 
                     {/* --- BUTTONS (LOGIN + TRY FOR FREE) --- */}
-                    <div className="d-flex flex-column align-items-center gap-3">
+                    <div className="HeaderButtons">
                         <Button
                             variant="outline-light"
                             className="px-3"
