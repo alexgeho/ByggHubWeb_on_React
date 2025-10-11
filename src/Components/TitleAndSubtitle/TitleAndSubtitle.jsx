@@ -7,7 +7,7 @@ const TitleAndSubtitle = ({title, subtitle, align = "left", variant = "default"}
             TitleAndSubtitle 
             ${align === "center" ? "centered" : ""}
             ${variant === "features" ? "features" : ""}
-            ${variant === "white" ? "whiteBackground" : ""}
+            ${variant === "whiteBackground" ? "whiteBackground" : ""}
             ${variant === "blue" ? "blueBlock" : ""}
             ${variant === "pricingTitle" ? "pricingTitle" : ""}
             ${variant === "pricingPackage" ? "pricingPackage" : ""}

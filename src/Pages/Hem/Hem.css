@@ -9,12 +9,13 @@
 .HemPageDark {
     background-color: #000509;
     color: white;
+    padding-bottom: 30px;
 }
 
 .HemPageLight {
     background-color: #f5f8ff;
     color: #000;
-    padding: 20px 20px 0;
+    /*padding-top: 60px;*/
 }
 
 .CustomCard {

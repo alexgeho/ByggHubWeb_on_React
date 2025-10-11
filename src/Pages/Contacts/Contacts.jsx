@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Card, Form, Button } from "react-bootstrap";
-import "../css/Contacts.css";
+import "./Contacts.css";
 
 export default function Contacts() {
     const [form, setForm] = useState({ email: "", phone: "", message: "", agree: false });

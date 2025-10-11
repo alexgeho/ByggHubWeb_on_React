@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button, Form, Container, Row, Col } from "react-bootstrap";
-import "../css/Login.css"; // можно использовать тот же стиль, что для Login
+import "./Login.css"; // можно использовать тот же стиль, что для Login
 
 export default function Signup() {
     const [formData, setFormData] = useState({
@@ -106,7 +106,7 @@ export default function Signup() {
                                 </Button>
 
                                 <p className="text-center text-secondary mt-3">
-                                    Already have an account? <a href="/login">Login</a>
+                                    Already have an account? <a href="/Login/Login">Login</a>
                                 </p>
                             </Form>
                         </div>

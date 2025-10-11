@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Accordion } from "react-bootstrap";
-import "../css/Faq.css";
+import "./Faq.css";
 
 export default function Faq() {
     return (

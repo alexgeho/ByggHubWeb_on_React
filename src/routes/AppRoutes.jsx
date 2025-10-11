@@ -1,13 +1,13 @@
 // src/routes/AppRoutes.js
 import { Routes, Route } from "react-router-dom";
-import Hem from "../Pages/Hem";
+import Hem from "../Pages/Hem/Hem";
 import OmOss from "../Pages/Om_oss";
-import Contacts from "../Pages/Contacts";
-import Blog from "../Pages/Blog";
-import Login from "../Pages/Login";
-import Signup from "../Pages/Signup";
-import About from "../Pages/About";
-import Faq from "../Pages/Faq";
+import Contacts from "../Pages/Contacts/Contacts";
+import Blog from "../Pages/Blog/Blog";
+import Login from "../Pages/Login/Login";
+import Signup from "../Pages/Login/Signup";
+import About from "../Pages/About/About";
+import Faq from "../Pages/Faq/Faq";
 import ArticlePage from "../Pages/ArticlePage";
 
 export default function AppRoutes() {

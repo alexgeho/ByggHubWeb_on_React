@@ -1,15 +1,15 @@
 import React, {Component} from 'react';
-import phone2 from '../assets/p2.png';
-import phone3 from '../assets/p3.png';
-import phone4 from '../assets/p4.png';
-import phone5 from '../assets/p5.png';
-import HeroBlock from '../Components/HeroBlock/HeroBlock';
-import '../css/Hem.css';
-import PhoneBlock from "../Components/PhoneBlock/PhoneBlock";
-import BlueBlock from "../Components/BlueBlock/BlueBlock";
-import TitleAndSubtitle from "../Components/TitleAndSubtitle/TitleAndSubtitle";
-import ContentBlocks from "../Components/ContentBlocks/ContentBlocks";
-import FAQBlock from "../Components/FAQBlock/FAQBlock";
+import phone2 from '../../assets/p2.png';
+import phone3 from '../../assets/p3.png';
+import phone4 from '../../assets/p4.png';
+import phone5 from '../../assets/p5.png';
+import HeroBlock from '../../Components/HeroBlock/HeroBlock';
+import './Hem.css';
+import PhoneBlock from "../../Components/PhoneBlock/PhoneBlock";
+import BlueBlock from "../../Components/BlueBlock/BlueBlock";
+import TitleAndSubtitle from "../../Components/TitleAndSubtitle/TitleAndSubtitle";
+import ContentBlocks from "../../Components/ContentBlocks/ContentBlocks";
+import FAQBlock from "../../Components/FAQBlock/FAQBlock";
 
 export default class Hem extends Component {
     render() {
@@ -21,12 +21,12 @@ export default class Hem extends Component {
                 </div>
 
 
-                <div className="HemPageLight d-flex flex-column  justify-content-center align-items-center gap-1">
+                <div className="HemPageLight d-flex flex-column  justify-content-center align-items-center">
 
                     <TitleAndSubtitle
-                        variant="white"
+                        variant="whiteBackground"
                         align="center"
-                        title="We know what problems you have"
+                        title={<>Save time, nerves, and money <br/>with ByggHub</>}
                         subtitle=""
                     />
 

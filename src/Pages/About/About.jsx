@@ -1,12 +1,12 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import "../css/About.css";
+import "./About.css";
 
 // заменишь на свои картинки
-import team1 from "../assets/team1.jpg";
-import team2 from "../assets/team2.jpg";
-import heroImg from "../assets/bg1.jpg"
-import valuesImg from "../assets/values.jpg";
+import team1 from "../../assets/team1.jpg";
+import team2 from "../../assets/team2.jpg";
+import heroImg from "../../assets/bg1.jpg"
+import valuesImg from "../../assets/values.jpg";
 
 export default function About() {
     return (

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import postImg from "../assets/post-cover.jpg";
-import "../css/Blog.css";
+import postImg from "../../assets/post-cover.jpg";
+import "./Blog.css";
 
 function ArticleCard({ slug, tag="Management", title, excerpt, image = postImg }) {
     return (

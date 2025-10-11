@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Form, Container, Row, Col } from 'react-bootstrap';
-import '../css/Login.css';
+import './Login.css';
 
 export default function Login() {
     const [email, setEmail] = useState('');
